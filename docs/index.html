@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bird Pocket — 다운로드</title>
+<meta name="description" content="화면 구석의 작은 새 정원 — 전 세계의 새를 모으는 데스크톱 위젯 게임">
+<style>
+  :root{ --bg:#15110d; --bg2:#241b14; --ink:#f4ece0; --ink2:#cdbfae; --line:rgba(255,255,255,.12);
+    --gold:#f0c64e; --coral:#ff9a7a; --sage:#8fd0a0; --card:rgba(255,255,255,.05); }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:radial-gradient(120% 90% at 50% 0%,var(--bg2),var(--bg) 70%);color:var(--ink);
+    font-family:"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh;}
+  a{color:inherit;}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 22px 60px;}
+  header{text-align:center;}
+  .logo{width:128px;height:128px;image-rendering:pixelated;border-radius:22px;box-shadow:0 10px 34px -10px rgba(0,0,0,.6);}
+  h1{font-size:40px;font-weight:900;margin:18px 0 6px;letter-spacing:-.5px;}
+  .tag{color:var(--ink2);font-size:17px;line-height:1.5;margin:0 auto;max-width:520px;}
+  /* 다운로드 */
+  .dl{margin:34px 0 8px;display:flex;flex-direction:column;align-items:center;gap:12px;}
+  .btn{display:inline-flex;align-items:center;gap:10px;border:none;border-radius:999px;padding:15px 30px;font-size:18px;font-weight:800;
+    cursor:pointer;text-decoration:none;transition:transform .12s,filter .15s,box-shadow .15s;background:var(--sage);color:#143024;box-shadow:0 8px 22px -8px rgba(143,208,160,.5);}
+  .btn:hover{filter:brightness(1.06);transform:translateY(-1px);} .btn:active{transform:scale(.97);}
+  .btn.alt{background:rgba(255,255,255,.1);color:var(--ink);box-shadow:none;font-size:15px;padding:11px 22px;}
+  .btn .os{font-size:13px;opacity:.7;font-weight:700;}
+  .hint{color:var(--ink2);font-size:13px;}
+  .others{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:4px;}
+  /* 설치 안내 */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:40px;}
+  @media(max-width:560px){ .grid{grid-template-columns:1fr;} h1{font-size:32px;} }
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px 16px;}
+  .card h3{margin:0 0 10px;font-size:16px;display:flex;align-items:center;gap:8px;}
+  .card ol{margin:0;padding-left:20px;line-height:1.65;font-size:14px;color:var(--ink2);}
+  .card b{color:var(--ink);}
+  .note{background:rgba(240,198,78,.08);border:1px solid rgba(240,198,78,.25);border-radius:12px;padding:12px 14px;margin-top:22px;font-size:13.5px;color:var(--ink2);line-height:1.6;}
+  .feat{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:34px;}
+  .chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:13px;color:var(--ink2);}
+  footer{text-align:center;margin-top:42px;color:var(--ink2);font-size:13px;}
+  footer a{color:var(--sage);text-decoration:none;font-weight:700;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="logo" src="icon.png" alt="Bird Pocket">
+    <h1>🐦 Bird Pocket</h1>
+    <p class="tag">화면 구석의 작은 새 정원.<br>전 세계 <b>62개국 · 568종</b>의 새를 모으는 데스크톱 위젯 게임</p>
+  </header>
+
+  <div class="dl">
+    <a class="btn" id="primary" href="#">⬇ 다운로드 <span class="os" id="osLabel"></span></a>
+    <div class="others" id="others"></div>
+    <div class="hint">설치 불필요 · 첫 실행 시 Google 로그인 → 진행도 클라우드 저장</div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>🪟 Windows 설치</h3>
+      <ol>
+        <li><b>BirdPocket-1.0.0.exe</b> 다운로드 → 더블클릭</li>
+        <li>"Windows의 PC를 보호했습니다" 창 → <b>추가 정보 → 실행</b></li>
+        <li>🐦 화면에서 <b>Google 로그인</b> → 시작!</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h3>🍎 macOS 설치 <span style="font-size:12px;color:var(--ink2)">(Apple Silicon)</span></h3>
+      <ol>
+        <li><b>.dmg</b> 다운로드 → 열기 → 앱을 Applications로 드래그</li>
+        <li>처음 실행 시 "열 수 없습니다" → <b>완료</b></li>
+        <li>시스템 설정 → 개인정보 보호 및 보안 → 아래로 스크롤 → <b>"그래도 열기"</b></li>
+        <li>비밀번호 / Touch ID → 열기</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="note">
+    ⚠️ 서명/공증을 하지 않은 개인 배포라, 처음 한 번 위와 같은 보안 허용이 필요해요(정상입니다). 인터넷은 로그인·저장에만 쓰고, 게임·사진·음악은 앱에 모두 내장돼 있습니다. · Intel Mac은 별도 빌드가 필요합니다.
+  </div>
+
+  <div class="feat">
+    <span class="chip">🎨 절차적 픽셀아트</span><span class="chip">🎵 나라별 BGM</span><span class="chip">🌦 날씨·계절</span>
+    <span class="chip">📖 도감·실제사진</span><span class="chip">🏆 도전과제</span><span class="chip">🏅 글로벌 랭킹</span><span class="chip">☁️ 클라우드 저장</span>
+  </div>
+
+  <footer>
+    소스 · 모든 버전 → <a href="https://github.com/woopo666/bird-pocket" target="_blank">github.com/woopo666/bird-pocket</a><br>
+    made with 🐦
+  </footer>
+</div>
+
+<script>
+  var BASE='https://github.com/woopo666/bird-pocket/releases/download/v1.0.0/';
+  var WIN={name:'Windows',file:'BirdPocket-1.0.0.exe'};
+  var MAC={name:'macOS (Apple Silicon)',file:'BirdPocket-1.0.0-arm64.dmg'};
+  var ua=navigator.userAgent;
+  var isMac=/Mac/i.test(ua)&&!/iPhone|iPad/i.test(ua);
+  var primary=isMac?MAC:WIN, secondary=isMac?WIN:MAC;
+  var pb=document.getElementById('primary');
+  pb.href=BASE+primary.file;
+  document.getElementById('osLabel').textContent='· '+primary.name;
+  var oth=document.getElementById('others');
+  var a=document.createElement('a'); a.className='btn alt'; a.href=BASE+secondary.file;
+  a.textContent='다른 OS: '+secondary.name; oth.appendChild(a);
+</script>
+</body>
+</html>
