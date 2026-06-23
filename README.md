@@ -2,9 +2,11 @@
 
 <img src="icon.png" width="140" alt="Bird Pocket"/>
 
-# 🐦 Bird Pocket
+# Bird Pocket
 
 **화면 구석의 작은 새 정원 — 전 세계의 새를 모으는 데스크톱 위젯 게임**
+
+made by **Woo JaeHyeon**
 
 [**⬇ 다운로드 (Windows · macOS)**](https://github.com/woopo666/bird-pocket/releases/latest)
 
@@ -69,6 +71,6 @@ Bird Pocket은 화면 한구석에 늘 떠 있는 **데스크톱 펫 위젯**입
 
 <div align="center">
 
-새 한 마리가 날아오길 기다리며 🐦
+made by **Woo JaeHyeon** · 새 한 마리가 날아오길 기다리며
 
 </div>
