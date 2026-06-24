@@ -39,6 +39,20 @@
   .chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:13px;color:var(--ink2);}
   footer{text-align:center;margin-top:42px;color:var(--ink2);font-size:13px;}
   footer a{color:var(--sage);text-decoration:none;font-weight:700;}
+  /* 패치노트 */
+  .patch{margin-top:46px;}
+  .patch .ptitle{font-size:18px;font-weight:800;text-align:center;margin:0 0 16px;color:var(--ink);}
+  .patch details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:0 0 8px;overflow:hidden;}
+  .patch summary{cursor:pointer;padding:13px 16px;font-weight:800;font-size:15px;list-style:none;display:flex;align-items:center;gap:9px;user-select:none;}
+  .patch summary::-webkit-details-marker{display:none;}
+  .patch summary::before{content:'▸';color:var(--sage);font-size:12px;transition:transform .15s;}
+  .patch details[open] summary::before{transform:rotate(90deg);}
+  .patch summary:hover{background:rgba(255,255,255,.04);}
+  .patch .pver{color:var(--gold);}
+  .patch .pdate{font-size:11px;font-weight:800;color:#143024;background:var(--sage);border-radius:999px;padding:2px 9px;margin-left:auto;}
+  .patch .pbody{padding:2px 18px 15px 40px;}
+  .patch ul{margin:0;padding-left:17px;line-height:1.75;font-size:13.5px;color:var(--ink2);}
+  .patch li b{color:var(--ink);}
 </style>
 </head>
 <body>
@@ -47,7 +61,7 @@
     <img class="logo" src="icon.png" alt="Bird Pocket">
     <h1>Bird Pocket</h1>
     <p class="tag">화면 구석의 작은 새 정원.<br>전 세계 <b>62개국 · 568종</b>의 새를 모으는 데스크톱 위젯 게임</p>
-    <p class="by">made by <b>Woo JaeHyeon</b></p>
+    <p class="by">Made by <b>WJH</b></p>
   </header>
 
   <div class="dl">
@@ -60,7 +74,7 @@
     <div class="card">
       <h3>🪟 Windows 설치</h3>
       <ol>
-        <li><b>BirdPocket-1.0.3.exe</b> 다운로드 → 더블클릭</li>
+        <li><b>BirdPocket-1.0.4.exe</b> 다운로드 → 더블클릭</li>
         <li>"Windows의 PC를 보호했습니다" 창 → <b>추가 정보 → 실행</b></li>
         <li>🐦 화면에서 <b>Google 로그인</b> → 시작!</li>
       </ol>
@@ -85,6 +99,51 @@
     <span class="chip">📖 도감·실제사진</span><span class="chip">🏆 도전과제</span><span class="chip">🏅 글로벌 랭킹</span><span class="chip">☁️ 클라우드 저장</span>
   </div>
 
+  <div class="patch">
+    <h2 class="ptitle">📋 패치노트</h2>
+    <details open>
+      <summary><span class="pver">v1.0.4</span><span class="pdate">최신</span></summary>
+      <div class="pbody"><ul>
+        <li>🪟 <b>불투명도(투명화) 슬라이더</b> 추가 — ⚙️설정 → 화면. 0~100%(실제 15~100%)로 창을 반투명하게, 0%에서도 살짝 보여요</li>
+        <li>크레딧 표기 정리 (Made by WJH)</li>
+      </ul></div>
+    </details>
+    <details>
+      <summary><span class="pver">v1.0.3</span></summary>
+      <div class="pbody"><ul>
+        <li>📖 <b>도감을 나라별로 복원</b></li>
+        <li>⭐ <b>대표새 고르기</b> 별도 화면 — 모은 새 전체에서 대륙 필터로 골라 지정 (⚙️설정 → 프로필)</li>
+      </ul></div>
+    </details>
+    <details>
+      <summary><span class="pver">v1.0.2</span></summary>
+      <div class="pbody"><ul>
+        <li>📖 도감 상세 <b>2단 레이아웃</b> (왼쪽 이미지·정보, 오른쪽 설명)</li>
+        <li>시작 시 화면 중앙 안내 텍스트, 하단 단축키 힌트 정리</li>
+        <li>🏆 도전과제 — 받기 대기 항목이 위로 정렬</li>
+        <li>⛲ 분수대 앞에 새 배치, 🔊 볼륨 버튼 위치 조정(오클릭 방지)</li>
+        <li>🗑 <b>계정 초기화</b> 기능 (⚙️설정 → 계정)</li>
+      </ul></div>
+    </details>
+    <details>
+      <summary><span class="pver">v1.0.1</span></summary>
+      <div class="pbody"><ul>
+        <li>🪪 Google 첫 로그인 시 <b>닉네임 설정</b></li>
+        <li>하단 안내 문구 표시 on/off 옵션</li>
+        <li>🔔 <b>업데이트 알림</b>(버전 체크) 추가</li>
+      </ul></div>
+    </details>
+    <details>
+      <summary><span class="pver">v1.0.0</span></summary>
+      <div class="pbody"><ul>
+        <li>🎉 첫 출시 — <b>62개국 · 12대륙 · 568종</b>의 새</li>
+        <li>절차적 픽셀아트, 먹이주기, 도감(실제 사진·등장 확률)</li>
+        <li>날씨·시간대·계절, 나라별 BGM, 상점·꾸미기, 펫, 도전과제</li>
+        <li>☁️ Google 로그인 + 클라우드 저장, 🏅 글로벌 랭킹</li>
+      </ul></div>
+    </details>
+  </div>
+
   <footer>
     소스 · 모든 버전 → <a href="https://github.com/woopo666/bird-pocket" target="_blank">github.com/woopo666/bird-pocket</a><br>
     made with 🐦
@@ -93,7 +152,7 @@
 
 <script>
   var REL='https://github.com/woopo666/bird-pocket/releases/download/';
-  var WIN={name:'Windows',url:REL+'v1.0.3/BirdPocket-1.0.3.exe'};
+  var WIN={name:'Windows',url:REL+'v1.0.4/BirdPocket-1.0.4.exe'};
   var MAC={name:'macOS (Apple Silicon)',url:REL+'v1.0.2/BirdPocket-1.0.2-arm64.dmg'};
   var ua=navigator.userAgent;
   var isMac=/Mac/i.test(ua)&&!/iPhone|iPad/i.test(ua);
