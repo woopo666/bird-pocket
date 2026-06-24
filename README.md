@@ -44,7 +44,7 @@ Bird Pocket은 화면 한구석에 늘 떠 있는 **데스크톱 펫 위젯**입
 | OS | 파일 | 설치 |
 |----|------|------|
 | **Windows** | `BirdPocket-1.0.4.exe` | 더블클릭 (설치 불필요한 포터블). 경고 시 → **추가 정보 → 실행** |
-| **macOS** (Apple Silicon) | `BirdPocket-1.0.2-arm64.dmg` | Applications로 드래그 → **시스템 설정 → 개인정보 보호 및 보안 → "그래도 열기"** |
+| **macOS** (Apple Silicon) | `BirdPocket-1.0.4-arm64.dmg` | Applications로 드래그 → **시스템 설정 → 개인정보 보호 및 보안 → "그래도 열기"** |
 
 > 서명/공증을 하지 않은 개인 배포라 처음 한 번 보안 경고가 뜹니다(정상). 자세한 순서는 릴리스의 `how-to-run.txt` 참고.
 > 첫 실행 시 🐦 화면에서 **Google 로그인** 후 시작됩니다. (Intel Mac은 별도 빌드 필요)
