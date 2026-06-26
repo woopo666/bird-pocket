@@ -43,7 +43,7 @@ Bird Pocket은 화면 한구석에 늘 떠 있는 **데스크톱 펫 위젯**입
 
 | OS | 파일 | 설치 |
 |----|------|------|
-| **Windows** | `BirdPocket-1.0.10.exe` | 더블클릭 (설치 불필요한 포터블). 경고 시 → **추가 정보 → 실행** |
+| **Windows** | `BirdPocket-1.0.11.exe` | 더블클릭 (설치 불필요한 포터블). 경고 시 → **추가 정보 → 실행** |
 | **macOS** (Apple Silicon) | `BirdPocket-1.0.8-arm64.dmg` | Applications로 드래그 → **시스템 설정 → 개인정보 보호 및 보안 → "그래도 열기"** |
 
 > 서명/공증을 하지 않은 개인 배포라 처음 한 번 보안 경고가 뜹니다(정상). 자세한 순서는 릴리스의 `how-to-run.txt` 참고.
@@ -66,6 +66,7 @@ Bird Pocket은 화면 한구석에 늘 떠 있는 **데스크톱 펫 위젯**입
 - **Canvas 2D** 절차적 픽셀아트 렌더러 + **Web Audio** 합성 사운드 (이미지·오디오 파일 0)
 - **Firebase** — Google 인증 · Firestore 클라우드 저장 · 공개 리더보드
 - 픽셀 폰트 **Galmuri11**
+- **새소리** — [Xeno-canto](https://xeno-canto.org) 녹음(541종, CC 라이선스, 앱 내 녹음자·라이선스 표기) · 사진 — 위키미디어 공용
 
 ---
 
