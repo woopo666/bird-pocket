@@ -74,7 +74,7 @@
     <div class="card">
       <h3>🪟 Windows 설치</h3>
       <ol>
-        <li><b>BirdPocket-1.0.8.exe</b> 다운로드 → 더블클릭</li>
+        <li><b>BirdPocket-1.0.9.exe</b> 다운로드 → 더블클릭</li>
         <li>"Windows의 PC를 보호했습니다" 창 → <b>추가 정보 → 실행</b></li>
         <li>🐦 화면에서 <b>Google 로그인</b> → 시작!</li>
       </ol>
@@ -102,7 +102,13 @@
   <div class="patch">
     <h2 class="ptitle">📋 패치노트</h2>
     <details open>
-      <summary><span class="pver">v1.0.8</span><span class="pdate">최신</span></summary>
+      <summary><span class="pver">v1.0.9</span><span class="pdate">최신</span></summary>
+      <div class="pbody"><ul>
+        <li>🔧 <b>꾸미기 배치 초기화 버그 수정</b> — 로그인할 때마다 소품 배치가 사라지던 문제 해결(로컬 배치를 클라우드와 병합해 보존)</li>
+      </ul></div>
+    </details>
+    <details>
+      <summary><span class="pver">v1.0.8</span></summary>
       <div class="pbody"><ul>
         <li>🔧 <b>진행도 롤백 버그 수정</b> — 재실행 시 해금·도감이 되돌아가던 문제 해결(저장 시각 비교 + 진행도 병합)</li>
         <li>🗺 지도 <b>맨 위 대륙 이름</b>도 안 잘리게(툴팁 자동 위/아래)</li>
@@ -171,7 +177,7 @@
 
 <script>
   var REL='https://github.com/woopo666/bird-pocket/releases/download/';
-  var WIN={name:'Windows',url:REL+'v1.0.8/BirdPocket-1.0.8.exe'};
+  var WIN={name:'Windows',url:REL+'v1.0.9/BirdPocket-1.0.9.exe'};
   var MAC={name:'macOS (Apple Silicon)',url:REL+'v1.0.8/BirdPocket-1.0.8-arm64.dmg'};
   var ua=navigator.userAgent;
   var isMac=/Mac/i.test(ua)&&!/iPhone|iPad/i.test(ua);
