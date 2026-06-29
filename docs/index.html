@@ -74,7 +74,7 @@
     <div class="card">
       <h3>🪟 Windows 설치</h3>
       <ol>
-        <li><b>BirdPocket-1.0.16.exe</b> 다운로드 → 더블클릭</li>
+        <li><b>BirdPocket-1.0.17.exe</b> 다운로드 → 더블클릭</li>
         <li>"Windows의 PC를 보호했습니다" 창 → <b>추가 정보 → 실행</b></li>
         <li>🐦 화면에서 <b>Google 로그인</b> → 시작!</li>
       </ol>
@@ -102,7 +102,13 @@
   <div class="patch">
     <h2 class="ptitle">📋 패치노트</h2>
     <details open>
-      <summary><span class="pver">v1.0.16</span><span class="pdate">최신</span></summary>
+      <summary><span class="pver">v1.0.17</span><span class="pdate">최신</span></summary>
+      <div class="pbody"><ul>
+        <li>🛡 <b>자가복구 백업 (데이터 안전망)</b> — 클라우드 문서에 "최고 기록" 진행도를 함께 보관하고, 라이브 데이터가 비거나 줄면 다음 로그인에 <b>자동 복원</b>. 줄어든 데이터로는 백업을 덮지 않습니다. (v1.0.16 3중 방어 + 자가복구)</li>
+      </ul></div>
+    </details>
+    <details>
+      <summary><span class="pver">v1.0.16</span></summary>
       <div class="pbody"><ul>
         <li>🛡 <b>계정 초기화 버그 수정 (데이터 보호)</b> — 업데이트 직후 드물게 계정이 초기화/롤백되던 치명적 결함 해결. 저장본을 항상 서버에서 직접 읽고, 서버 로드 성공 전엔 클라우드에 쓰지 않으며, 로컬·클라우드 진행도를 양방향 합집합으로 병합 → 어느 기기·어느 시점이든 손실 0. <b>모든 사용자 업데이트 강력 권장.</b></li>
       </ul></div>
@@ -230,7 +236,7 @@
 
 <script>
   var REL='https://github.com/woopo666/bird-pocket/releases/download/';
-  var WIN={name:'Windows',url:REL+'v1.0.16/BirdPocket-1.0.16.exe'};
+  var WIN={name:'Windows',url:REL+'v1.0.17/BirdPocket-1.0.17.exe'};
   var MAC={name:'macOS (Apple Silicon)',url:REL+'v1.0.15/BirdPocket-1.0.15-arm64.dmg'};
   var ua=navigator.userAgent;
   var isMac=/Mac/i.test(ua)&&!/iPhone|iPad/i.test(ua);
