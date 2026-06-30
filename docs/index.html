@@ -74,7 +74,7 @@
     <div class="card">
       <h3>🪟 Windows 설치</h3>
       <ol>
-        <li><b>BirdPocket-1.0.18.exe</b> 다운로드 → 더블클릭</li>
+        <li><b>BirdPocket-1.0.19.exe</b> 다운로드 → 더블클릭</li>
         <li>"Windows의 PC를 보호했습니다" 창 → <b>추가 정보 → 실행</b></li>
         <li>🐦 화면에서 <b>Google 로그인</b> → 시작!</li>
       </ol>
@@ -102,7 +102,14 @@
   <div class="patch">
     <h2 class="ptitle">📋 패치노트</h2>
     <details open>
-      <summary><span class="pver">v1.0.18</span><span class="pdate">최신</span></summary>
+      <summary><span class="pver">v1.0.19</span><span class="pdate">최신</span></summary>
+      <div class="pbody"><ul>
+        <li>🎓 <b>대륙별 "새교수" 업적 (12종)</b> — 각 대륙 도감 <b>100% 완성</b> 시 「{대륙} 새교수」 달성! 보상으로 코인 + 대륙별 학사모(술 색이 대륙마다 다른 수집 아이템, 정원 배치 가능)</li>
+        <li>🏷 먹이 카드 <b>티어 뱃지</b>(좌상단) · 🔍 호버 정보 정리(이 지역 N종이 좋아해요 · 보유 N개) · 🖱 <b>상점 먹이 꾹 누르면 연속 구매</b></li>
+      </ul></div>
+    </details>
+    <details>
+      <summary><span class="pver">v1.0.18</span></summary>
       <div class="pbody"><ul>
         <li>🔒 <b>다중 기기 세션 잠금</b> — 다른 기기에서 같은 계정으로 켜면 기존 기기가 즉시 일시정지(클라우드 쓰기 중단). [이 기기에서 계속하기]로 다시 가져오기 → 동시 접속 데이터 꼬임 차단</li>
         <li>🔢 <b>버전 기반 동기화</b> — 저장마다 카운터로 최신본을 시계와 무관하게 정확 판별 (진행도는 양방향 합집합이라 손실 0)</li>
@@ -245,7 +252,7 @@
 
 <script>
   var REL='https://github.com/woopo666/bird-pocket/releases/download/';
-  var WIN={name:'Windows',url:REL+'v1.0.18/BirdPocket-1.0.18.exe'};
+  var WIN={name:'Windows',url:REL+'v1.0.19/BirdPocket-1.0.19.exe'};
   var MAC={name:'macOS (Apple Silicon)',url:REL+'v1.0.17/BirdPocket-1.0.17-arm64.dmg'};
   var ua=navigator.userAgent;
   var isMac=/Mac/i.test(ua)&&!/iPhone|iPad/i.test(ua);
