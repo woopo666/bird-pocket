@@ -74,7 +74,7 @@
     <div class="card">
       <h3>🪟 Windows 설치</h3>
       <ol>
-        <li><b>BirdPocket-1.0.19.exe</b> 다운로드 → 더블클릭</li>
+        <li><b>BirdPocket-1.1.0.exe</b> 다운로드 → 더블클릭</li>
         <li>"Windows의 PC를 보호했습니다" 창 → <b>추가 정보 → 실행</b></li>
         <li>🐦 화면에서 <b>Google 로그인</b> → 시작!</li>
       </ol>
@@ -102,7 +102,20 @@
   <div class="patch">
     <h2 class="ptitle">📋 패치노트</h2>
     <details open>
-      <summary><span class="pver">v1.0.19</span><span class="pdate">최신</span></summary>
+      <summary><span class="pver">v1.1.0</span><span class="pdate">최신</span></summary>
+      <div class="pbody"><ul>
+        <li>🦉 <b>부엉이·맹금류 294종 대량 추가</b> — 62개국 나라별 부엉이·올빼미·매·수리! <b>밤엔 부엉이, 낮엔 매·수리</b>가 찾아와요. 맹금 전용 먹이 🐀들쥐·🍖고깃덩이·✨전설의 생고기 추가</li>
+        <li>🦅 <b>맹금이 나타나면 주변 새들이 혼비백산 도망</b></li>
+        <li>🐢 <b>갈라파고스 제도 신규 대륙</b> — 섬 5곳 + 다윈의 새 15종(부비·군함조·펭귄·핀치…) · 화산섬 풍경 · 「갈라파고스 새교수」 업적</li>
+        <li>📷 <b>도감에 실제 새 사진</b>(위키백과) 연결 · 상세 화면 개편(원본사진 → 울음소리 → 도트/변종)</li>
+        <li>✂️ <b>도감 새 이미지 잘림 전면 수정</b>(황새·두루미 등 발·꼬리·도가머리까지 꽉 차게) · 창 크기 반응형</li>
+        <li>🔭 <b>탐조 모드</b> — 우상단 🔭 버튼으로 모든 UI 숨기고 풍경·새만 감상(ESC로 복귀)</li>
+        <li>🐦 <b>자연스러운 새 움직임 5종 추가</b>(꽁지 까딱·부르르 털기·머리 긁기·갸웃 살피기·꾸벅 인사)</li>
+        <li>🛒 상점 <b>꾹 눌러 구매</b> 반응성 개선(눌림 효과·수량 카운터·소리) · 🕐 <b>시계 표시 끄기</b> 설정</li>
+      </ul></div>
+    </details>
+    <details>
+      <summary><span class="pver">v1.0.19</span></summary>
       <div class="pbody"><ul>
         <li>🎓 <b>대륙별 "새교수" 업적 (12종)</b> — 각 대륙 도감 <b>100% 완성</b> 시 「{대륙} 새교수」 달성! 보상으로 코인 + 대륙별 학사모(술 색이 대륙마다 다른 수집 아이템, 정원 배치 가능)</li>
         <li>🏷 먹이 카드 <b>티어 뱃지</b>(좌상단) · 🔍 호버 정보 정리(이 지역 N종이 좋아해요 · 보유 N개) · 🖱 <b>상점 먹이 꾹 누르면 연속 구매</b></li>
@@ -252,8 +265,8 @@
 
 <script>
   var REL='https://github.com/woopo666/bird-pocket/releases/download/';
-  var WIN={name:'Windows',url:REL+'v1.0.19/BirdPocket-1.0.19.exe'};
-  var MAC={name:'macOS (Apple Silicon)',url:REL+'v1.0.19/BirdPocket-1.0.19-arm64.dmg'};
+  var WIN={name:'Windows',url:REL+'v1.1.0/BirdPocket-1.1.0.exe'};
+  var MAC={name:'macOS (Apple Silicon)',url:REL+'v1.1.0/BirdPocket-1.1.0-arm64.dmg'};
   var ua=navigator.userAgent;
   var isMac=/Mac/i.test(ua)&&!/iPhone|iPad/i.test(ua);
   var primary=isMac?MAC:WIN, secondary=isMac?WIN:MAC;
