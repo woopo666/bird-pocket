@@ -74,7 +74,7 @@
     <div class="card">
       <h3>🪟 Windows 설치</h3>
       <ol>
-        <li><b>BirdPocket-1.1.0.exe</b> 다운로드 → 더블클릭</li>
+        <li><b>BirdPocket-1.1.1.exe</b> 다운로드 → 더블클릭</li>
         <li>"Windows의 PC를 보호했습니다" 창 → <b>추가 정보 → 실행</b></li>
         <li>🐦 화면에서 <b>Google 로그인</b> → 시작!</li>
       </ol>
@@ -102,7 +102,13 @@
   <div class="patch">
     <h2 class="ptitle">📋 패치노트</h2>
     <details open>
-      <summary><span class="pver">v1.1.0</span><span class="pdate">최신</span></summary>
+      <summary><span class="pver">v1.1.1</span><span class="pdate">최신</span></summary>
+      <div class="pbody"><ul>
+        <li>🐛 <b>도감 중복 새 수정</b> — 같은 종이 도감에 두 번 보이던 문제 해결(신규 맹금 중복 24종 정리 + 나라별 새와 겹치던 대륙 공통새 표시 정리). 수집·완성도에는 영향 없어요.</li>
+      </ul></div>
+    </details>
+    <details>
+      <summary><span class="pver">v1.1.0</span></summary>
       <div class="pbody"><ul>
         <li>🦉 <b>부엉이·맹금류 294종 대량 추가</b> — 62개국 나라별 부엉이·올빼미·매·수리! <b>밤엔 부엉이, 낮엔 매·수리</b>가 찾아와요. 맹금 전용 먹이 🐀들쥐·🍖고깃덩이·✨전설의 생고기 추가</li>
         <li>🦅 <b>맹금이 나타나면 주변 새들이 혼비백산 도망</b></li>
@@ -265,8 +271,8 @@
 
 <script>
   var REL='https://github.com/woopo666/bird-pocket/releases/download/';
-  var WIN={name:'Windows',url:REL+'v1.1.0/BirdPocket-1.1.0.exe'};
-  var MAC={name:'macOS (Apple Silicon)',url:REL+'v1.1.0/BirdPocket-1.1.0-arm64.dmg'};
+  var WIN={name:'Windows',url:REL+'v1.1.1/BirdPocket-1.1.1.exe'};
+  var MAC={name:'macOS (Apple Silicon)',url:REL+'v1.1.1/BirdPocket-1.1.1-arm64.dmg'};
   var ua=navigator.userAgent;
   var isMac=/Mac/i.test(ua)&&!/iPhone|iPad/i.test(ua);
   var primary=isMac?MAC:WIN, secondary=isMac?WIN:MAC;
